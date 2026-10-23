@@ -1,20 +1,26 @@
-<div align="right">
-  <a href="README.pt-BR.md">
-    <img src="https://img.shields.io/badge/Language-Portugu%C3%AAs-blue?style=for-the-badge" alt="Versão em Português">
-  </a>
-</div>
+<div align="center">
 
 # Windows Security Auditor (`exe.bat`)
 
-> A standalone, single-file Windows audit tool designed to inspect recently installed or updated programs, Windows apps, and browser extensions to detect unwanted software, telemetry, or surveillance bots.
+[![English Version](https://img.shields.io/badge/Language-English-blue?style=for-the-badge)](#-english-version)
+[![Versão em Português](https://img.shields.io/badge/Language-Portugu%C3%AAs-green?style=for-the-badge)](#-versão-em-português)
+
+<br/>
 
 ![Windows](https://img.shields.io/badge/Windows-10%20%7C%2011-0078D6?logo=windows&logoColor=white)
 ![Platform](https://img.shields.io/badge/Architecture-x64%20%7C%20ARM64-lightgrey)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
+</div>
+
 ---
 
-## ⚡ Zero Configuration (Single-File Architecture)
+<a name="english-version"></a>
+## 🇺🇸 English Version
+
+> A standalone, single-file Windows audit tool designed to inspect recently installed or updated programs, Windows apps, and browser extensions to detect unwanted software, telemetry, or surveillance bots.
+
+### ⚡ Zero Configuration (Single-File Architecture)
 
 **This repository distributes only the `exe.bat` file.**
 
@@ -22,9 +28,7 @@
 - The persistent filter file (`whitelist.txt`) is **automatically created** in the same folder the first time you click to ignore any publisher or software name.
 - You do not need to download or configure any extra files. Simply keep `exe.bat` in a dedicated folder (e.g., `C:\SecurityAuditor\` or a local tools folder).
 
----
-
-## 🔍 Features
+### 🔍 Features
 
 - **Deep System Inspection:**
   - **Desktop Programs (Win32):** Queries Windows Registry uninstall trees (both 32-bit and 64-bit).
@@ -39,17 +43,56 @@
 - **Responsive UI:** Full maximization and resize support for high-resolution displays.
 - **Silent Engine:** Hides the command prompt automatically once the graphical window opens.
 
----
-
-## 🚀 How to Use
+### 🚀 How to Use
 
 1. Download **`exe.bat`** from this repository.
 2. Place it in a folder of your choice (e.g., `Documents\SecurityAuditor\`).
 3. Double-click **`exe.bat`** to run.
    > **Tip:** To audit all user profiles on the computer, right-click `exe.bat` and select **Run as administrator**.
 
+[⬆ Back to Top](#windows-security-auditor-exebat)
+
 ---
 
-## 📄 License
+<a name="versão-em-português"></a>
+## 🇧🇷 Versão em Português
 
-This project is licensed under the [MIT License](LICENSE).
+> Uma ferramenta de auditoria para Windows em arquivo único (`exe.bat`) projetada para listar softwares, aplicativos e extensões instalados ou atualizados recentemente, facilitando a detecção de spywares, bots de vigilância ou ferramentas indesejadas.
+
+### ⚡ Configuração Zero (Arquivo Único)
+
+**Este repositório distribui unicamente o arquivo `exe.bat`.**
+
+- **Sem necessidade de instaladores ou dependências.**
+- O arquivo de regras persistentes (`whitelist.txt`) é **gerado de forma 100% automática** na mesma pasta assim que você clica em ignorar um fabricante ou programa pela primeira vez.
+- Você não precisa criar nem baixar nada além do `exe.bat`. Recomenda-se apenas mantê-lo dentro de uma pastinha própria (ex: `C:\SecurityAuditor\` ou dentro de `Documentos`).
+
+### 🔍 Funcionalidades
+
+- **Varredura Completa do Sistema:**
+  - **Programas Clássicos (Desktop):** Varre registros de 32 e 64 bits do Windows.
+  - **Apps Modernos (Appx / Loja Windows):** Monitora criação e atualização de pacotes.
+  - **Extensões de Navegador:** Varre pastas de extensões do Google Chrome e Microsoft Edge.
+- **Data e Hora Precisas:** Identifica o momento exato da alteração/instalação.
+- **Filtro de Dias na Interface:** Padrão de 30 dias retroativos, ajustável diretamente na tela através do botão *Apply Filter*.
+- **Lista de Ignorados (Whitelist Automática):**
+  - **Ignore Publisher:** Oculta todos os programas de uma fabricante confiável (ex: *Microsoft Corporation*) com um clique.
+  - **Ignore Name:** Oculta pelo nome exato do aplicativo (ideal para quando o fabricante for `Unknown`).
+  - **Restore:** Restaura qualquer item de volta para análise quando desejar.
+- **Interface Responsiva:** Suporte completo a tela cheia / maximização sem distorcer as tabelas.
+- **Execução Limpa:** O terminal preto (CMD) desaparece sozinho assim que o painel gráfico carrega.
+
+### 🚀 Como Usar
+
+1. Baixe o arquivo **`exe.bat`** deste repositório.
+2. Coloque-o em uma pasta dedicada (ex: `Documentos\SecurityAuditor\`).
+3. Dê dois cliques em **`exe.bat`** para abrir.
+   > **Dica:** Para auditar todos os usuários da máquina, clique com o botão direito em `exe.bat` e escolha **Executar como Administrador**.
+
+[⬆ Voltar ao Topo](#windows-security-auditor-exebat)
+
+---
+
+## 📄 License / Licença
+
+Distributed under the [MIT License](LICENSE).
